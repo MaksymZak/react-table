@@ -14,7 +14,7 @@ interface Props<TData> {
 function TableSelectPagination<TData>({ table }: Props<TData>) {
   const { pageSize } = table.getState().pagination;
   const totalRows = table.getRowCount();
-  console.log(pageSize);
+
   return (
     <div>
       <Select
